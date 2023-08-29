@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+
+  .loading-container {
+    text-align: center;
+  }
+
+  .ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3498db;
+    animation: bounce 1s infinite alternate;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(100px);
+      animation-timing-function: ease-out;
+    }
+  }
+</style>
+<title>Loading Page</title>
+</head>
+<body>
+  <div class="loading-container">
+    <div class="ball"></div>
+    <h1>Online Student Database is temporarily disabled</h1>
+    <h2>Server is being maintained</h2>
+  </div>
+</body>
+</html>
